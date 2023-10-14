@@ -1,0 +1,56 @@
+name: CentralCore
+version: '${project.version}'
+main: com.github.albardoo02.CentralCore
+api-version: 1.15
+authors: [ albardoo02 ]
+description: サーバーの中心プラグイン
+website: https://github.com/albardoo02/CentralCore
+
+commands:
+  cc:
+    description: CentralCoreコマンド
+    aliases:
+      - centralcore
+      - core
+      - central
+      - /cc
+  wiki:
+    description: Wikiコマンド
+  setwiki:
+    description: Wikiの設定コマンド
+    aliases:
+      - settingwiki
+      - editwiki
+      - ewiki
+  wear:
+    description: アイテム装備コマンド
+    aliases:
+      - equip
+  gui:
+    description: 自販機コマンド
+    aliases:
+      - machine
+      - shopgui
+  money:
+    description: 所持金確認コマンド
+    aliases:
+      - yen
+
+permissions:
+  centralcore.*:
+    description: CentralCoreの全権限
+    children:
+      centralcore.command.admin: true
+      centralcore.command.setwiki: true
+      centralcore.command.wear: true
+    default: op
+  cecntralcore.command.admin:
+    description: CentralCoreコマンドの権限
+    default: op
+  centralcore.command.setwiki:
+    description: SetWikiコマンドの権限
+    default: op
+  centralcore.command.wear:
+    description: Wearコマンドの権限
+    default: op
+

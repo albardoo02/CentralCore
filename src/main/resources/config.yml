@@ -1,0 +1,64 @@
+#---------------------------------------------
+# CentralCore Configuration ver.1.0
+# Plugin Version: 1.1
+# すべての設定でカラーコードが使用可能です
+# true：有効
+# false；無効
+#---------------------------------------------
+
+#------------------ Global -------------------
+# プレイヤーに権限がない場合に表示されるメッセージ
+NoPerm:
+  - '&cあなたには権限がありません!'
+#---------------- WikiCommand ----------------
+#ヘルプコマンド使用時に表示するメッセージ
+SetCommandHelp:
+  - '&7======== &aSetWikiコマンドヘルプ &7========'
+  - '&6エイリアス&7：&f/ewiki, /editwiki, /settingwiki'
+  - '&6Wikiコマンド使用時のURL&7：&f/setwiki set <URL>'
+  - '&6設定名付きのURLの登録&7：&f/setwiki add <設定名> <URL>'
+
+# /wikiで表示されるリンクのメッセージを設定します
+# /setwiki set <URL> で設定可能です
+URL: "https://github.com/"
+
+# 登録したURLの一覧
+# /setwiki add <設定名> <URL> で登録します
+Links:
+  GitHub:
+    URL: "&bhttps://github.com/"
+
+# Wikiコマンド使用時に表示する形式の設定
+# 設定した名前  -> %name
+# Wikiのリンク -> %url
+Link:
+  - '&e%nameのリンク：&f%url'
+
+# WikiコマンドのTAB補完に表示されるリスト
+# 設定した名前と同じにしてください
+# 表示したくない場合は、その文字列を削除してください
+TAB:
+  - "GitHub"
+#---------------- WearCommand ----------------
+#ヘルプコマンド使用時に表示するメッセージ
+WearCommandHelp:
+  - '&7=======& aWearコマンドヘルプ &7======='
+  - '&6エイリアス&7：&fequip'
+  - '&6使用方法&7：&f/wear <helmet|chestplate|leggings|boots>'
+
+#---------------- CentralCoreCommand -----------------
+# ヘルプコマンド使用時に表示するメッセージ
+CentralCoreCommandHelp:
+  - '&7======= &aCentralCoreコマンドヘルプ &7====  ==='
+  - '&6エイリアス&7：&f/cc, /core, /central, //cc'
+  - '&6Getコマンド使用方法&7：&f/cc get <アイテム名>'
+
+#---------------- BlockBreak -----------------
+# ブロックを破壊した際にプレイヤーにお金を与える
+# BlockBreakMoney:
+#   Enabled: true/false
+#   Amount: "金額"
+BlockBreakMoney:
+  Enabled: true
+  Amount: "0.01"
+#---------------------------------------------
