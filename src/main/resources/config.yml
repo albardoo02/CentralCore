@@ -43,7 +43,7 @@ TAB:
 #ヘルプコマンド使用時に表示するメッセージ
 WearCommandHelp:
   - '&7=======& aWearコマンドヘルプ &7======='
-  - '&6エイリアス&7：&fequip'
+  - '&6エイリアス&7：&f/equip'
   - '&6使用方法&7：&f/wear <helmet|chestplate|leggings|boots>'
 
 #---------------- CentralCoreCommand -----------------
